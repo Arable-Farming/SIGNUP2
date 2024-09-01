@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 142.1 76.2% 36.3%;
+--primary-foreground: 355.7 100% 97.3%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 142.1 76.2% 36.3%;
+				}
+				.dark {
+					--background: 20 14.3% 4.1%;
+--foreground: 0 0% 95%;
+--popover: 0 0% 9%;
+--popover-foreground: 0 0% 95%;
+--card: 24 9.8% 10%;
+--card-foreground: 0 0% 95%;
+--primary: 142.1 70.6% 45.3%;
+--primary-foreground: 144.9 80.4% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 0 0% 15%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 12 6.5% 15.1%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 85.7% 97.3%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 142.4 71.8% 29.2%;
+				}
+			}
+		</style>
+  </head>
+  <body background="https://media.istockphoto.com/id/482816996/photo/rice-paddy-fields-cultivated-land.jpg?s=2048x2048&w=is&k=20&c=utUEnn-34xOdxRMHccYGwnj3EqEtOGfOHLQwKdxRhlg=">
+    <!doctype html>
+<html lang="en">
+  <body class="bg-background-dark text-foreground-dark">
+    <header class="bg-green-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold text-xl flex items-center font-serif">
+          <img src="https://placehold.co/50x50" alt="Aarable Farming Logo" class="mr-2" />
+          Aarable Farming
+        </div>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Service</a></li>
+            <li><a href="#" class="text-white">Media</a></li>
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#" class="text-white" id="loginBtn">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="text-center py-20">
+      <h1 class="text-4xl font-bold font-serif">AGRICULTURE IS LIFE</h1>
+      <h2 class="text-3xl font-semibold mt-4">Pure 100% Organic Products</h2>
+      <p class="mt-4 text-lg">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+    </section>
+    <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div class="bg-card p-4 rounded-lg shadow-md">
+        <img src="https://img.freepik.com/free-photo/plant-growing-coins-glass-jar-money-green-grass_155003-5432.jpg?w=1480&t=st=1725216209~exp=1725216809~hmac=b3e6a8344e75b4e2a09b073b24f8d539cd6e291610fe8210abbe6e0de7022d54" />
+        <h3 class="text-xl font-semibold mt-2">Finance</h3>
+      </div>
+      <div class="bg-card p-4 rounded-lg shadow-md">
+        <img src="https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Organic Products" class="w-full rounded-lg" />
+        <h3 class="text-xl font-semibold mt-2">Store</h3>
+      </div>
+      <div class="bg-card p-4 rounded-lg shadow-md">
+        <img src="https://i.pinimg.com/564x/a6/fb/bb/a6fbbbd101844a2c686f103cb03b2480.jpg" alt="Quality Standard" class="w-full rounded-lg" />
+        <h3 class="text-xl font-semibold mt-2">Fertilizer</h3>
+      </div>
+    </section>
+    <footer class="bg-green-800 text-white text-center p-4">
+      <p>Contact Us</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="text-white">Facebook</a>
+        <a href="#" class="text-white">Twitter</a>
+        <a href="#" class="text-white">Instagram</a>
+      </div>
+      <p class="mt-2">Get a Quote: <a href="aarablefarming@gmail.com" class="underline">aarablefarming@gmail.com</a></p>
+    </footer>
+    <div id="loginPopup" class="fixed top-0 left-0 w-full h-full bg-popover bg-opacity-90 flex justify-center items-center hidden">
+      <div class="bg-card p-4 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Login</h2>
+        <form>
+          <label for="username" class="block text-sm font-medium text-zinc-700">Username</label>
+          <input type="text" id="username" name="username" class="w-full mt-1 p-2 border border-input rounded-md focus:ring focus:ring-ring" required />
+          <label for="password" class="block text-sm font-medium text-zinc-700 mt-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full mt-1 p-2 border border-input rounded-md focus:ring focus:ring-ring" required />
+          <button type="submit" class="w-full mt-4 bg-primary text-primary-foreground p-2 rounded-md hover:bg-primary/80">Login</button>
+        </form>
+        <button id="closePopup" class="absolute top-2 right-2 text-primary-foreground hover:text-primary font-bold">X</button>
+      </div>
+    </div>
+    <script>
+      const loginBtn = document.getElementById('loginBtn');
+      const loginPopup = document.getElementById('loginPopup');
+      const closePopup = document.getElementById('closePopup');
+      loginBtn.addEventListener('click', () => {
+          loginPopup.classList.remove('hidden');
+      });
+      closePopup.addEventListener('click', () => {
+          loginPopup.classList.add('hidden');
+      });
+    </script>
+  </body>
+</html>
+  </body>
+</html>
