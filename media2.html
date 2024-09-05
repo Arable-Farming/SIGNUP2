@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bbe9a5;
+        }
+
+        header {
+            background-color: hwb(77 17% 23%);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .media-item {
+            background-color: hsl(0, 0%, 100%);
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            height: 250px; /* Set the fixed height */
+            margin-bottom: 20px;
+            overflow: hidden; /* Ensure content doesn't overflow */
+        }
+
+        .media-item img {
+            height: 100%; /* Image height matches section height */
+            width: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .media-item p {
+            margin: 0;
+            width: calc(100% - 150px); /* Adjust width based on image size */
+            overflow-y: auto; /* Add scroll if text overflows */
+        }
+
+        footer {
+            background-color: hwb(77 17% 23%);
+            color: hwb(0 100% 0%);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Media Page</h1>    
+    </header>
+
+    <div class="container">
+        <div class="media-item">
+            <img src="img\rice insect1.jpg" alt="Media Image 1">
+            <p>The most common species include Yellow Stem Borer (Scirpophaga incertulas) and White Stem Borer (Scirpophaga innotata). 
+                These pests affect rice at various stages of its growth.</p>
+        </div>
+
+        <div class="media-item">
+            <img src="img\image6.jpg" alt="Media Image 2">
+            <p>Description or text related to image 2.</p>
+        </div>
+
+        <div class="media-item">
+            <img src="img\image7.jpg" alt="Media Image 3">
+            <p>Description or text related to image 3.</p>
+        </div>
+
+        <div class="media-item">
+            <img src="img\image8.jpg" alt="Media Image 4">
+            <p>Description or text related to image 4.</p>
+        </div>
+
+        <div class="media-item">
+            <img src="img\image10.jpg" alt="Media Image 5">
+            <p>Description or text related to image 5.</p>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="location.href='media1.html'">Previous</button>
+    </footer>
+</body>
+
+</html>

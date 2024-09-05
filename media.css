@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: hsl(0, 0%, 96%);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-box {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 0%, 87%);
+    border: 2px solid hwb(0 80% 20%);
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
