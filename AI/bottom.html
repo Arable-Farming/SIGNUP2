@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Info Lookup and Additional Images</title>
+    <link rel="stylesheet" href="Css/bottom.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image to Scan the plant </h1>
+
+        
+        <div class="upload-section">
+            <label for="imageUpload">Upload Image:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="getImageInfo()">Get Info</button>
+        </div>
+        
+        <!-- Preview of the uploaded image -->
+        <div id="imagePreviewContainer">
+            <img id="uploadedImagePreview">
+        </div>
+        
+        <!-- Information about the image -->
+        <div id="info"></div>
+        
+        <!-- Additional images -->
+        <div id="additionalImagesContainer">
+            <img id="additionalImage1">
+            <img id="additionalImage2">
+        </div>
+        
+        <!-- Spinner for processing -->
+        <div id="loadingSpinner"></div>
+    </div>
+
+    <script src="JS/bottom.js"></script>
+</body>
+</html>
