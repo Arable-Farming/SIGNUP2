@@ -1,4 +1,4 @@
-<html>
+<html class="animate">
  <head>
   <title>
    Crop Disease Media Resources
@@ -17,9 +17,37 @@
         .hover-zoom:hover img {
             transform: scale(1.1);
         }
+        .animate {
+      opacity: 0;
+      transform: translateY(100px);
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    /* Define the keyframes for the slide-in effect */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Add some delay between each element's animation */
+    .animate:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .animate:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .animate:nth-child(3) {
+      animation-delay: 0.6s;
+    }    
   </style>
  </head>
- <body class="bg-white text-gray-800">
+ <body class="animate" class="bg-white text-gray-800">
   <header class="flex justify-between items-center p-6">
    <nav class="flex space-x-6">
    logo
@@ -311,5 +339,8 @@
                  }
              });
          }
+         
+   </script>
+   <script>
    </script>
 </html>
